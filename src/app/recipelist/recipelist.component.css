@@ -1,0 +1,10 @@
+img {
+	width : 40Px;
+	height: 40px;
+	margin-left: 10px;
+}
+
+li:hover {
+	
+	background: blue;
+}

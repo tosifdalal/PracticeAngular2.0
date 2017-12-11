@@ -1,0 +1,16 @@
+<div class="panel panel-default">
+
+<div class="panel-body">
+
+<ol class="list-group">
+<a href="/{{$index}}" class="list-group-item" *ngFor="let recipe of recipeList">{{recipe.name}}
+<img [src]="'../../assets/images/' + recipe.image" alt="Image Not There!!"/>
+
+
+</a>
+</ol>
+
+</div>
+
+
+</div>
