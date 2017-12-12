@@ -12,4 +12,15 @@ export class SigninComponent implements OnInit {
   ngOnInit() {
   }
 
+  loginUser(name,pass)
+  {
+    console.log('user=', name);
+    console.log('pass=', pass);
+  }
+
+  eventCheck(value)
+  {
+    console.log(value);
+  }
+
 }

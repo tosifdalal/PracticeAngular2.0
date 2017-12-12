@@ -1,18 +1,17 @@
 <div class="panel-body">
 	<form>
 		<div class="form-group">
-			<label for="user">User name</label> <input type="text"
-				class="form-control" id="user">
+			<label for="user">User name</label> <input type="text" class="form-control" id="user" #userInput>
 		</div>
 		<div class="form-group">
-			<label for="pwd">Password:</label> <input type="password"
-				class="form-control" id="pwd">
+			<label for="pwd">Password:</label> <input type="password" class="form-control" id="pwd" #userPass>
 		</div>
 		<div class="checkbox">
 			<label><input type="checkbox"> Remember me</label>
 		</div>
-		<button type="submit" class="btn btn-primary">Submit</button>
+		<button type="submit" (click) = "loginUser(userInput.value,userPass.value)" class="btn btn-primary">Submit</button>
 	</form>
+	<a href="#" (mouseover)= "eventCheck($event)">New User?Register here</a>
 </div>
 
 
